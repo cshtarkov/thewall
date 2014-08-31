@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>the wall - unleash yourself</title>
+        <style>
+            #wall {
+                border: 1px solid;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            h1 {
+                font-size: 25px;
+                text-align: center;
+            }
+            footer {
+                font-size: 12px;
+                text-align: center;
+            }
+            a, a:visited {
+                text-decoration: none;
+                color: blue;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>the wall - unleash yourself within 480K pixels</h1>
+        <br>
+        <canvas width="800" height="600" id="wall">
+            You really ought to upgrade your browser.
+        </canvas>
+        <br>
+        <footer>What you draw is persistent, so be mindful. Built on <a href="http://jquery.com">jquery</a>, <a href="http://calebevans.me/projects/jcanvas">jcanvas</a>, <a href="https://github.com/einaros/ws">ws</a>.</footer>
+        <script src="jquery-1.11.1.min.js"></script>
+        <script src="jcanvas.min.js"></script>
+        <script src="wall.js"></script>
+    </body>
+</html>
+

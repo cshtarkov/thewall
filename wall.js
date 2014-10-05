@@ -16,6 +16,8 @@ $(document).ready(function() {
     var ws = new WebSocket("ws://wall.shtarkov.net:81/server.js");
     ws.onopen = function() {
 
+        $("#live").attr("class", "liveyes");
+
         var notifying = false;
         var originx, originy;
 

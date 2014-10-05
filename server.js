@@ -12,6 +12,9 @@ wss.broadcast = function(data) {
 wss.on("connection", function(ws) {
     ws.on("message", function(data) {
         var message = JSON.parse(data);
+        if(message.type == "probe") {
+            wss.broadcast("live");
+        }
         if(message.type == "coords") {
             wss.broadcast(data);
         }
